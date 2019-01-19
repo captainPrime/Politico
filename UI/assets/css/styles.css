@@ -525,6 +525,10 @@ p{
 	  height: initial;
   }
 
+  #parties-btn{
+	  margin-top: 10px;
+  }
+
   .feed-card-footer {
 	  font-size: 10px;
 	  text-align: center;
