@@ -176,6 +176,7 @@ h2{
     .home .landing h1 {
         font-size: 2.2em;
     }
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -193,5 +194,38 @@ h2{
     
 }
 
+@media (max-width: 575.98px) { 
+
+	nav.politico-nav div.nav-right, 
+	nav.politico-nav div.nav-left {
+	 float: none;
+	 padding: 0;
+	}
+
+	.nav-right{
+		margin-top: 30px;
+		margin-left: -50px;
+	} 
+	
+	nav.politico-nav a:last-child {
+		padding: 0;
+		margin-bottom: 15px;
+	}
+    .nav-left a h2:{
+        color: white;
+    } 
+
+  .header {
+	  width: 100%;
+	  float: none;
+	  margin-left: 50px;
+  }
+
+  ul li a{
+
+    margin-right: 30px;
+}
+
+}
 
 

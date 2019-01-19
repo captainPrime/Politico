@@ -453,7 +453,15 @@ p{
 	.vote-card{
 		width: 100%; /*100%*/
 		height: 300px;
+	}	
+}
+
+@media (max-width: 577px){
+	.header {
+
+		margin-left: 80px;
 	}
+
 }
 
 @media (max-width: 575.98px) { 
@@ -527,8 +535,14 @@ p{
   .header {
 	  width: 100%;
 	  float: none;
-	  margin-left: 80px;
+	  margin-left: 50px;
   }
+
+  ul li a{
+
+    margin-right: 30px;
+}
+
 }
 
 
