@@ -113,7 +113,7 @@ describe("/Create office", () => {
 
 describe('/Delete Party', function() {
   
-	  it('should return status 202 after DELETING a bus', function(done) {
+	  it('should return status 202 after DELETING a party', function(done) {
 		const party = 	{
 			"id" : 1, 
 			"name" : "Action Unity Congress",
