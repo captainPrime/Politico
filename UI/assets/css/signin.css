@@ -89,6 +89,11 @@
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
 }
 
+nav.politico-nav div.nav-left {
+ float: none;
+ padding: 0;
+}
+
 @media (max-width: 575.98px) { 
 	.signin-area {
 		width: 90%;
