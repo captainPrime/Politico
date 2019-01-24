@@ -9,7 +9,7 @@ class PartyValidations {
 		if(!hqAddress || !name || !logoUrl){
 	    	return res.status(422).json({
 		        status: 422,
-		        error: "All fields are required, you must provide the title and body"
+		        error: "All fields are required, you must provide the hqAddress, name and "
 		    });
 		}
         
