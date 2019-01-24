@@ -1,32 +1,15 @@
-let express = require("express"); 
-
-const offices = require("../mocks/offices");
-let bodyParser = require("body-parser");
-
+const express = require("express");
 const router = express.Router();
-
-//adding a middleware
-
-router.use(bodyParser.json());
-/*  
-router.use((req, res, next) =>{
-	console.log(`${new Date().toString()} => ${req.originalUrl}`);
-	next();
-}); */
-//-------------------------------------------------
+const officesController = require("../controllers/officesController");
+const officeValidations = require("../validations/officeValidation");
+router.use(express.json());
 
 
-//get a question by email
-router.get("/offices/:id", (req, res)=>{
-	if(!req.body || req.params.id > offices.length){
-		res.status(404).send({status: 404, error: "request not found"});
-	}
-
-
-
-	const specificOffices = offices.find(c => c.id === parseInt(req.params.id, 10));
-	res.send({status: 200, data: [specificOffices]});
-
-});
-
+// POST A QUESTION
+router.get(
+	"/offices/:id",
+	officeValidations.aOfficeValidations,
+	officesController.getAOffice,
+);
+  
 module.exports = router;

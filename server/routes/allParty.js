@@ -1,28 +1,16 @@
-let express = require("express"); 
-let bodyParser = require("body-parser");
-const parties = require("../mocks/parties");
-
+const express = require("express");
 const router = express.Router();
+const partiesController = require("../controllers/partiesController");
+const partiesValidations = require("../validations/partiesValidations");
+router.use(express.json());
 
-//adding a middleware
 
-
-router.use(bodyParser.json());
- 
-/* router.use((req, res, next) =>{
-	console.log(`${new Date().toString()} => ${req.originalUrl}`);
-	next();
-}); */
-//-------------------------------------------------
-
-//get all questions
-router.get("/parties", (req, res)=>{
-	if(!req.body){
-		res.status(404).send({status: 404, error: "request not found"});
-	}
-
-	res.send({status: 200, data: parties});
-
-});
-
+// POST A QUESTION
+router.get(
+	"/parties/",
+	partiesValidations.allPartyValidations,
+	partiesController.allParties,
+);
+  
 module.exports = router;
+ 
