@@ -1,4 +1,4 @@
-const parties = require("../mocks/parties");
+import parties from "../mocks/parties";
 
 class PartiesController {
 	static createParty(req, res) {
@@ -43,4 +43,4 @@ class PartiesController {
 		res.status(200).send({status: 200, data: [`party with the ID ${specificParty.id} has been deleted`]});
 	}
 }
-module.exports = PartiesController;
+export default PartiesController;

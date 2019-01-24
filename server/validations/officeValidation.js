@@ -1,6 +1,6 @@
 
-const offices = require("../mocks/offices");
-const helpers = require("../helpers/helpers");
+import offices from  "../mocks/offices";
+import helpers from "../helpers/helpers";
 
 class OfficeValidations {
 	createOfficeValidation(req, res, next){
@@ -58,4 +58,4 @@ class OfficeValidations {
 	}
 }
 
-module.exports = new OfficeValidations;
+export default new OfficeValidations;

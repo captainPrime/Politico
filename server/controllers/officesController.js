@@ -1,4 +1,4 @@
-const offices = require("../mocks/offices");
+import offices from "../mocks/offices";
 
 class OfficesController {
 	static createOffice(req, res) {
@@ -25,4 +25,4 @@ class OfficesController {
 	}
 
 }
-module.exports = OfficesController;
+export default OfficesController;

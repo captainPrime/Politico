@@ -1,5 +1,5 @@
-const parties = require("../mocks/parties");
-const helpers = require("../helpers/helpers");
+import parties from "../mocks/parties";
+import helpers from "../helpers/helpers";
 
 class PartyValidations {
 	createPartyValidation(req, res, next){
@@ -83,4 +83,4 @@ class PartyValidations {
 
 }
 
-module.exports = new PartyValidations;
+export default new PartyValidations;
