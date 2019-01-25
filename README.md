@@ -1,7 +1,46 @@
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
-[![Code Climate](https://codeclimate.com/github/cloudfoundry/membrane.png)](https://codeclimate.com/github/cloudfoundry/membrane)
-[![Build Status](https://travis-ci.org/cloudfoundry/membrane.png)](https://travis-ci.org/cloudfoundry/membrane)
-![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
+[![Build Status](https://travis-ci.org/captainPrime/Politico.svg?branch=ft-api-endpoints-createOffice-%23163388520)](https://travis-ci.org/captainPrime/Politico)
 
-[![Build Status](https://travis-ci.org/geekdanitek/andela_fellowship_cycle_40.svg?branch=develop)](https://travis-ci.org/geekdanitek/andela_fellowship_cycle_40) [![Coverage Status](https://coveralls.io/repos/github/geekdanitek/andela_fellowship_cycle_40/badge.svg?branch=feature-create-meetup-record-api)](https://coveralls.io/github/geekdanitek/andela_fellowship_cycle_40?branch=feature-create-meetup-record-api) [![Maintainability](https://api.codeclimate.com/v1/badges/b1161b997b36d04b615c/maintainability)](https://codeclimate.com/github/geekdanitek/andela_fellowship_cycle_40/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/b1161b997b36d04b615c/test_coverage)](https://codeclimate.com/github/geekdanitek/andela_fellowship_cycle_40/test_coverage)
-# Politico
+# Politico 
+Politico is a web app which enables citizens give their mandate to politicians running for different government offices
+while building trust in the process through transparency.
+
+# Core Technology Stacks
+>- Front-end (UI) : HTML, CSS, (Vanilla) Javascript
+>- Back-end: Nodejs/Express
+>- Database: PostgreSQL
+>- Testing: Mocha and Chai
+>- Transpiler: Babel
+
+# Story Board
+Link to project management tool (Pivotal Tracker) 
+> https://www.pivotaltracker.com/n/projects/2239423
+
+# Template
+User Interface for Politico app is hosted on  
+> (https://captainprime.github.io/Politico/UI/)
+
+# Features
+- Users can sign up.
+- Users can login.
+- Admin (electoral body) can create political parties.
+- Admin (electoral body) can delete a political party.
+- Admin (electoral body) can create different political offices.
+- Users can vote for only one politician per political office.
+- Users can see the results of election.
+
+# Getting Started
+
+## Prerequistes
+
+## Getting Setup and Installation
+
+## Avaliable Functionalities
+
+# Running Tests
+
+# Deployment
+
+# Contributing
+
+# Author(s)
+>- [Taiwo Oyindamola Ezekiel](https://github.com/captainPrime)
