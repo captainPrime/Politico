@@ -5,9 +5,9 @@
   "main": "server/server.js",
   "scripts": {
     "lint": "eslint ./controllers --fix",
-    "test": "mocha ./server/test/api.test.js",
+    "test": "mocha ./server/bin/dev",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
-    "start": "nodemon ./server/bin/dev",
+    "start": "nodemon ./server/bin/dev2",
     "clean": "rm -rf dist",
     "build": "mkdir dist && babel server -s -d dist",
     "production": "npm run build && node .server/bin/production"

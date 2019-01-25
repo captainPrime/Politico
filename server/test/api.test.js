@@ -1,10 +1,10 @@
-const chai = require("chai");
+import chai from "chai";
 
-const chaiHttp = require("chai-http");
-const parties = require("../mocks/parties");
+import chaiHttp from "chai-http";
+import parties from "../mocks/parties";
 process.env.NODE_ENV = "test";
 
-const server = require("../app");
+import server from "../app";
 
 const { expect } = chai;
 const should = chai.should();
