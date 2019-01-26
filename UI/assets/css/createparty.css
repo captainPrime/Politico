@@ -1,0 +1,85 @@
+.create-party-area {
+
+}
+
+.create-party-area {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+.create-party-form-area {
+	margin-top: 10px;
+	position: relative;
+	padding: 10px 0px;
+	display: flex;
+	flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+}
+
+.create-party-form-text {
+	text-align: center;
+}
+
+.create-party-input-section {
+	display: block;
+	box-sizing: border-box;
+	margin: 10px 10px;
+	width: 100%;
+}
+
+.create-party-input-section >input {
+	padding: 18px 20px;
+	border: 1px solid #108014;
+	width: 96%;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    background-color: #ffffff;
+}
+.create-party-input-section >textarea {
+	padding: 18px 20px;
+	border: 1px solid #108014;
+	width: 96%;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    height: 200px;
+    resize: none;
+}
+
+.create-party-form-submit >button {
+	cursor: pointer;
+	padding: 14px 50px;
+	background-color: #108014;
+	border: none;
+	transition-duration: 0.4s;
+	border-radius: 5px;
+	color: #ffffff;
+	margin-left: 10px;
+}
+
+h3{
+	color: white;
+}
+
+.create-party-form-submit >button:hover {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+}
+
+@media (max-width: 575.98px) { 
+	.create-party-input-section {
+		margin: 10px 0px;
+	}
+	.create-party-input-section >input {
+		width: 100%;
+	}
+	.create-party-input-section >textarea {
+		width: 100%;
+	}
+	.create-party-form-submit >button {
+		width: 100%;
+		margin-left: 0;
+	}
+} 
