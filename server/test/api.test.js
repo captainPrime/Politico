@@ -47,13 +47,13 @@ describe("/Create party", () => {
 			.post("/api/v1/parties")
 			.send(party)
 			.end((err, res) => {
-			res.body.should.be.a("object");
-			res.should.have.status(422);
-			res.body.should.have.property("status").eql(422);
-			res.body.should.have.property("error").eql("All fields are required, you must provide the hqAddress, name and logoUrl");
-			done();
-		});
-});
+				res.body.should.be.a("object");
+				res.should.have.status(422);
+				res.body.should.have.property("status").eql(422);
+				res.body.should.have.property("error").eql("All fields are required, you must provide the hqAddress, name and logoUrl");
+				done();
+			});
+	});
 	
 });
 describe("/GET/:id parties", () => {
@@ -113,6 +113,18 @@ describe("/GET allOffices", () => {
 				done();
 			});
 	});
+
+	it("api should return status 201 on post", (done) => {
+
+		chai.request(server)
+			.post("/api/v1/parties")
+			.send({status: 201, data: "object"})
+			.end((err, res) => {
+				res.should.have.status(422);
+				expect(res.body).to.be.a("object");
+				done();
+			});
+	});
 });
 
 describe("/Create office", () => {
@@ -137,13 +149,13 @@ describe("/Create office", () => {
 			.post("/api/v1/offices")
 			.send(office)
 			.end((err, res) => {
-			res.body.should.be.a("object");
-			res.should.have.status(422);
-			res.body.should.have.property("status").eql(422);
-			res.body.should.have.property("error").eql("All fields are required, you must provide the title and body");
-			done();
-		});
-});
+				res.body.should.be.a("object");
+				res.should.have.status(422);
+				res.body.should.have.property("status").eql(422);
+				res.body.should.have.property("error").eql("All fields are required, you must provide the title and body");
+				done();
+			});
+	});
 	
 });
 
@@ -167,29 +179,39 @@ describe("/Delete Party", function() {
 			  done();
 		  });
 	  });
-});
-/* 
-describe("/Edit party", () => {
-	it("api should return status 422 there is no name", (done) => {
+
+	  it("api should return status 404 if ID not found", (done) => {
 		const party = 	{
-			id : 1, 
 			name : "",
-			hqAddress: "Ikeja, Lagos.",
-			logoUrl: "string"
 		};
 
 		chai.request(server)
-			.patch(`/api/v1/parties/${party.id}/name`)
+			.patch("/api/v1/parties/:id/")
 			.send(party)
 			.end((err, res) => {
 				res.body.should.be.a("object");
-				res.should.have.status(422);
-				res.body.should.have.property("status").eql(422);
-				res.body.should.have.property("error").eql("Name field is required");
+				res.should.have.status(404);
 				done();
 			});
 	});
-}) */
+});
+
+describe("/Edit party", () => {
+	it("api should return status 404 if ID not found", (done) => {
+		const party = 	{
+			name : "",
+		};
+
+		chai.request(server)
+			.patch("/api/v1/parties/:id/name")
+			.send(party)
+			.end((err, res) => {
+				res.body.should.be.a("object");
+				res.should.have.status(404);
+				done();
+			});
+	});
+});
 
 describe("/Create party", () => {
 	it("it should not create a party without name field", (done) => {

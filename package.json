@@ -4,7 +4,7 @@
   "description": "rest api for the politico app",
   "main": "server/server.js",
   "scripts": {
-    "lint": "eslint ./controllers --fix",
+    "lint": "eslint ./server --fix",
     "test": "mocha ./server/bin/dev",
     "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "start": "nodemon ./server/bin/dev2",
