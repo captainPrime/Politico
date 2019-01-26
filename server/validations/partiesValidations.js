@@ -13,7 +13,7 @@ class PartyValidations {
 		    });
 		}
         
-		let requiredFields = helpers.isRequired(req.body, ["hqAddress", "name"]);
+		let requiredFields = helpers.isRequired(req.body, ["hqAddress", "name", "logoUrl"]);
 
 		if (typeof requiredFields == "object" && requiredFields.length > 0) {
 		    return res.status(422).json({
@@ -30,6 +30,10 @@ class PartyValidations {
 
 		if(name.length <= 5){
 			errors.push({ name: "name should be more than 5 characters" });
+		}
+
+		if(logoUrl.length < 5){
+			errors.push({ logoUrl: "logoUrl should be more than 5 characters" });
 		}
 
 		if(errors.length > 0){

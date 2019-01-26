@@ -22,6 +22,8 @@ describe("/GET allParties", () => {
 				done();
 			});
 	});
+
+	
 });
 describe("/Create party", () => {
 	it("api should return status 201 on post", (done) => {
@@ -35,6 +37,23 @@ describe("/Create party", () => {
 				done();
 			});
 	});
+
+	
+	it("it should return status 422 if field are not given", (done) => {
+		const party = {
+		};
+
+		chai.request(server)
+			.post("/api/v1/parties")
+			.send(party)
+			.end((err, res) => {
+			res.body.should.be.a("object");
+			res.should.have.status(422);
+			res.body.should.have.property("status").eql(422);
+			res.body.should.have.property("error").eql("All fields are required, you must provide the hqAddress, name and logoUrl");
+			done();
+		});
+});
 	
 });
 describe("/GET/:id parties", () => {
@@ -108,6 +127,23 @@ describe("/Create office", () => {
 				done();
 			});
 	});
+
+	
+	it("it should return status 422 if field are not given", (done) => {
+		const office = {
+		};
+
+		chai.request(server)
+			.post("/api/v1/offices")
+			.send(office)
+			.end((err, res) => {
+			res.body.should.be.a("object");
+			res.should.have.status(422);
+			res.body.should.have.property("status").eql(422);
+			res.body.should.have.property("error").eql("All fields are required, you must provide the title and body");
+			done();
+		});
+});
 	
 });
 
@@ -132,6 +168,28 @@ describe("/Delete Party", function() {
 		  });
 	  });
 });
+/* 
+describe("/Edit party", () => {
+	it("api should return status 422 there is no name", (done) => {
+		const party = 	{
+			id : 1, 
+			name : "",
+			hqAddress: "Ikeja, Lagos.",
+			logoUrl: "string"
+		};
+
+		chai.request(server)
+			.patch(`/api/v1/parties/${party.id}/name`)
+			.send(party)
+			.end((err, res) => {
+				res.body.should.be.a("object");
+				res.should.have.status(422);
+				res.body.should.have.property("status").eql(422);
+				res.body.should.have.property("error").eql("Name field is required");
+				done();
+			});
+	});
+}) */
 
 describe("/Create party", () => {
 	it("it should not create a party without name field", (done) => {
@@ -299,6 +357,25 @@ describe("/Create Party", () => {
 		  });
 	  });
 
+	  it("it should not create a party if logoUrl characters is less than 5 characters", (done) => {
+		const party = {
+		  name: "Taiwo Oyin",
+		  hqAddress: "ikeja, lagos",
+		  logoUrl: "str",
+		};
+	
+		chai.request(server)
+		  .post("/api/v1/parties")
+		  .send(party)
+		  .end((err, res) => {
+				res.should.have.status(422);
+				res.body.should.be.a("object");
+				res.body.error.should.be.a("array");
+				res.body.error[0].should.be.a("object");
+				res.body.error[0].logoUrl.should.have.eql("logoUrl should be more than 5 characters");
+				done();
+		  });
+	  });
 });
 
 
