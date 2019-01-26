@@ -1,6 +1,6 @@
 .edit-card {
 	border: 1px solid rgba(0,0,0,.125);
-	border: 1px solid #81d4fa;
+	border: 1px solid #108014;
 	width: 100%;
 	height: 160px;
 	padding: 0 20px;
@@ -41,7 +41,7 @@
 .edit-card-button-area >button {
 	cursor: pointer;
 	padding: 9px 16px;
-	background-color: #29b6f6;
+	background-color: #108014;
 	border: none;
 	transition-duration: 0.4s;
 	border-radius: 5px;
@@ -70,7 +70,7 @@
 .edit-modal-content >button {
 	cursor: pointer;
 	padding: 14px 50px;
-	background-color: #29b6f6;
+	background-color: #108014;
 	border: none;
 	transition-duration: 0.4s;
 	border-radius: 5px;
@@ -92,7 +92,7 @@
   margin: 15% auto;
   padding: 30px;
   width: 30%;
-  border: 1px solid #81d4fa;
+  border: 1px solid #108014;
   border-radius: 5px;
 }
 
@@ -108,7 +108,7 @@ h3{
 .add-btn button{
 	cursor: pointer;
 	padding: 4px 18px 4px 18px;
-	background-color: #29b6f6;
+	background-color: #108014;
 	border: none;
 	transition-duration: 0.4s;
 	border-radius: 50%;

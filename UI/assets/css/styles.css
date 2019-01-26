@@ -113,7 +113,7 @@ hr {
 	.nav-button2:hover {
 		background-color: #ffffff;
 		  color: #343a40;
-		  border: 1px solid #29b6f6;
+		  border: 1px solid #108014;
 	
 }
 
@@ -129,7 +129,7 @@ hr {
 }
 
 .vote-button{
-	border: 3px solid #29b6f6;
+	border: 3px solid #108014;
 	color: #279dd3;
 	font-size: 20px;
 	margin-top: 140px;
@@ -146,11 +146,11 @@ hr {
 }
 
 .vote-button:hover{
-	background-color: #29b6f6;
+	background-color: #108014;
 
 }
 #candidate-btn, #parties-btn{
-	background-color: #29b6f6;
+	background-color: #108014;
 	color: white;
 	display: inline-block;
 }
@@ -254,7 +254,7 @@ nav.politico-nav a {
 
 .profile-card, .vote-card {
 	border: 1px solid rgba(0,0,0,.125);
-	border: 3px solid #29b6f6;
+	border: 3px solid #108014;
 	width: 100%; /*100%*/
 	height: 100px;
 	padding: 0 20px;
@@ -318,7 +318,7 @@ nav.politico-nav a {
    
 .feed-card {
 	border: 1px solid (0,0,0,.125);
-	border: 1.5px solid #81d4fa;
+	border: 1.5px solid #108014;
 	width: 100%;
 	height: 200px;
 	padding: 0 20px;
@@ -365,7 +365,7 @@ nav.politico-nav a {
 .feed-button-area >a button {
 	cursor: pointer;
 	padding: 8px 25px;
-	background-color: #29b6f6;
+	background-color: #108014;
 	border: none;
 	transition-duration: 0.4s;
 	border-radius: 5px;
@@ -421,7 +421,7 @@ p{
     margin: 20px 0;
 }
 .allpoliticians-link >a {
-	color: #29b6f6;
+	color: #108014;
 }
 
 .vote{
