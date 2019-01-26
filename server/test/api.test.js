@@ -40,10 +40,10 @@ describe("/Create party", () => {
 describe("/GET/:id parties", () => {
 	it("it should GET a party by the given id", (done) => {
 		const party = 	{
-			"id" : 1, 
-			"name" : "Action Unity Congress",
-			"hqAddress": "Ikeja, Lagos.",
-			"logoUrl": "string"
+			id : 1, 
+			name : "Action Unity Congress",
+			hqAddress: "Ikeja, Lagos.",
+			logoUrl: "string"
 		};
 
 		chai.request(server)
@@ -65,9 +65,9 @@ describe("/GET/:id parties", () => {
 describe("/GET/:id office", () => {
 	it("it should GET a office by the given id", (done) => {
 		const office = 		{
-			"id" : 1,
-			"type" : "federal", 
-			"name" : "president"
+			id : 1,
+			type : "federal", 
+			name : "president"
 		};
 
 		chai.request(server)
@@ -111,25 +111,246 @@ describe("/Create office", () => {
 	
 });
 
-describe('/Delete Party', function() {
+describe("/Delete Party", function() {
   
-	  it('should return status 202 after DELETING a party', function(done) {
+	  it("should return status 202 after DELETING a party", function(done) {
 		const party = 	{
-			"id" : 1, 
-			"name" : "Action Unity Congress",
-			"hqAddress": "Ikeja, Lagos.",
-			"logoUrl": "string"
+			id : 1, 
+			name : "Action Unity Congress",
+			hqAddress: "Ikeja, Lagos.",
+			logoUrl: "string"
 		};
 
 		chai.request(server)
 			.del(`/api/v1/parties/${party.id}`)
 		    .end(function(err, res) {
 			  if (err) {
-				throw err;
+					throw err;
 			  }
 			  res.should.have.status(200);
 			  done();
 		  });
 	  });
-  });
+});
 
+describe("/Create party", () => {
+	it("it should not create a party without name field", (done) => {
+	  const party = {
+			hqAddress: "ikeja, lagos",
+			logoUrl: "string",
+	  };
+  
+	  chai.request(server)
+			.post("/api/v1/parties")
+			.send(party)
+			.end((err, res) => {
+		  res.should.have.status(422);
+		  res.body.should.be.a("object");
+		  res.body.error[0].should.be.a("object");
+		  res.body.error[0].name.should.have.eql("name field is required");
+		  done();
+			});
+	});
+
+});
+
+describe("/Create party", () => {
+	it("it should not create a party without hqAddress field", (done) => {
+	  const party = {
+			name: "Taiwo Oyindamola",
+			logoUrl: "string",
+	  };
+  
+	  chai.request(server)
+			.post("/api/v1/parties")
+			.send(party)
+			.end((err, res) => {
+		  res.should.have.status(422);
+		  res.body.should.be.a("object");
+		  res.body.error[0].should.be.a("object");
+		  res.body.error[0].hqAddress.should.have.eql("hqAddress field is required");
+		  done();
+			});
+	});
+
+});
+
+describe("/Create party", () => {
+	it("it should not create a party without the complete field", (done) => {
+	  const party = {
+	  };
+  
+	  chai.request(server)
+			.post("/api/v1/parties")
+			.send(party)
+			.end((err, res) => {
+		  res.should.have.status(422);
+		  res.body.should.be.a("object");
+		  res.body.error[0].should.be.a("string");
+
+		  done();
+			});
+	});
+
+});
+
+
+
+describe("/Create office", () => {
+	it("it should not create a party without type field", (done) => {
+	  const office = {
+			name: "president",
+	  };
+  
+	  chai.request(server)
+			.post("/api/v1/offices")
+			.send(office)
+			.end((err, res) => {
+		  res.should.have.status(422);
+		  res.body.should.be.a("object");
+		  res.body.error[0].should.be.a("object");
+		  res.body.error[0].type.should.have.eql("type field is required");
+		  done();
+			});
+	});
+
+});
+
+describe("/Create office", () => {
+	it("it should not create a party without name field", (done) => {
+	  const office = {
+			type: "federal",
+
+	  };
+  
+	  chai.request(server)
+			.post("/api/v1/offices")
+			.send(office)
+			.end((err, res) => {
+		  res.should.have.status(422);
+		  res.body.should.be.a("object");
+		  res.body.error[0].should.be.a("object");
+		  res.body.error[0].name.should.have.eql("name field is required");
+		  done();
+			});
+	});
+
+});
+
+describe("/Create office", () => {
+	it("it should not create a party without the complete field", (done) => {
+	  const office = {
+	  };
+   
+	  chai.request(server)
+			.post("/api/v1/offices")
+			.send(office)
+			.end((err, res) => {
+		  res.should.have.status(422);
+		  res.body.should.be.a("object");
+		  res.body.error[0].should.be.a("string");
+
+		  done();
+			});
+	});
+
+});
+
+
+
+describe("/Create Party", () => {
+	it("it should not create a party if name characters is less than 5 characters", (done) => {
+	  const party = {
+			name: "abc",
+			hqAddress: "Ikeja, Lagos",
+			logoUrl: "string",
+	  };
+  
+	  chai.request(server)
+			.post("/api/v1/parties")
+			.send(party)
+			.end((err, res) => {
+		  res.should.have.status(422);
+		  res.body.should.be.a("object");
+		  res.body.error.should.be.a("array");
+		  res.body.error[0].should.be.a("object");
+		  res.body.error[0].name.should.have.eql("name should be more than 5 characters");
+		  done();
+			});
+	});
+  
+	it("it should not create a party if hqAddress characters is less than 5 characters", (done) => {
+		const party = {
+		  name: "Taiwo Oyin",
+		  hqAddress: "abc",
+		  logoUrl: "string",
+		};
+	
+		chai.request(server)
+		  .post("/api/v1/parties")
+		  .send(party)
+		  .end((err, res) => {
+				res.should.have.status(422);
+				res.body.should.be.a("object");
+				res.body.error.should.be.a("array");
+				res.body.error[0].should.be.a("object");
+				res.body.error[0].hqAddress.should.have.eql("hqAddress should be more than 5 characters");
+				done();
+		  });
+	  });
+
+});
+
+
+	
+describe("/Create Office", () => {
+	it("it should not create a office if name characters is less than 5 characters", (done) => {
+	  const office = {
+			name: "abc",
+			type: "federal"
+	  };
+  
+	  chai.request(server)
+			.post("/api/v1/offices")
+			.send(office)
+			.end((err, res) => {
+		  res.should.have.status(422);
+		  res.body.should.be.a("object");
+		  res.body.error.should.be.a("array");
+		  res.body.error[0].should.be.a("object");
+		  res.body.error[0].name.should.have.eql("name should be more than 5 characters");
+		  done();
+			});
+	});
+  
+	it("it should not create a office if name characters is less than 5 characters", (done) => {
+		const office = {
+		  name: "president",
+		  type: "abc"
+		};
+	
+		chai.request(server)
+		  .post("/api/v1/offices")
+		  .send(office)
+		  .end((err, res) => {
+				res.should.have.status(422);
+				res.body.should.be.a("object");
+				res.body.error.should.be.a("array");
+				res.body.error[0].should.be.a("object");
+				res.body.error[0].type.should.have.eql("type should be more than 5 characters");
+				done();
+		  });
+	  });
+
+});
+  
+describe("/* return NOT FOUND if request not found on the server", () => {
+	it("it should return a 404 error if request is not found", (done) => {
+	  chai.request(server)
+	  .get("/api/v1/candidate")
+	  .end((err, res) => {
+				res.should.have.status(404);
+				done();
+	  });
+	});
+}); 

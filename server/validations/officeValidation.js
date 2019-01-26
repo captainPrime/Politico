@@ -7,7 +7,7 @@ class OfficeValidations {
 
 		const { type, name } = req.body;
 
-		if(!type || !name){
+		if(!type && !name){
 	    	return res.status(422).json({
 		        status: 422,
 		        error: "All fields are required, you must provide the title and body"

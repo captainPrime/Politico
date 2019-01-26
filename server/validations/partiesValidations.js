@@ -6,10 +6,10 @@ class PartyValidations {
 
 		const { name, hqAddress, logoUrl } = req.body;
 
-		if(!hqAddress || !name || !logoUrl){
+		if(!hqAddress && !name && !logoUrl){
 	    	return res.status(422).json({
 		        status: 422,
-		        error: "All fields are required, you must provide the hqAddress, name and "
+		        error: "All fields are required, you must provide the hqAddress, name and logoUrl"
 		    });
 		}
         

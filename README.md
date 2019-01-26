@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/captainPrime/Politico.svg?branch=ft-api-endpoints-createOffice-%23163388520)](https://travis-ci.org/captainPrime/Politico)
 
-[![Coverage Status](https://coveralls.io/repos/github/captainPrime/Politico/badge.svg?branch=master)](https://coveralls.io/github/captainPrime/Politico?branch=branch=ft-api-endpoints-createOffice-%23163388520)
+[![Coverage Status](https://coveralls.io/repos/github/captainPrime/Politico/badge.svg?branch=ft-api-endpoints-createOffice-%23163388520)](https://coveralls.io/github/captainPrime/Politico?branch=ft-api-endpoints-createOffice-%23163388520)
 
 [![Code Climate](https://codeclimate.com/github/cloudfoundry/membrane.png)](https://codeclimate.com/github/cloudfoundry/membrane)
 
