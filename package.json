@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint ./controllers --fix",
     "test": "mocha ./server/bin/dev",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "start": "nodemon ./server/bin/dev2",
     "clean": "rm -rf dist",
     "build": "mkdir dist && babel server -s -d dist",
