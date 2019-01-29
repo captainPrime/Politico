@@ -1,6 +1,6 @@
 .edit-card {
 	border: 1px solid rgba(0,0,0,.125);
-	border: 1px solid #108014;
+	border: 1px solid #29b6f6;
 	width: 100%;
 	height: 160px;
 	padding: 0 20px;
@@ -38,15 +38,16 @@
 	 margin: 8px 0;
 }
 
-.edit-card-button-area >button {
+.edit-card-button-area > button, a #editButton {
 	cursor: pointer;
 	padding: 9px 16px;
-	background-color: #108014;
+	background-color: #29b6f6;
 	border: none;
 	transition-duration: 0.4s;
 	border-radius: 5px;
 	color: #ffffff;
 }
+
 
 .edit-card-footer {
 	text-align: right;
@@ -70,7 +71,7 @@
 .edit-modal-content >button {
 	cursor: pointer;
 	padding: 14px 50px;
-	background-color: #108014;
+	background-color: #29b6f6;
 	border: none;
 	transition-duration: 0.4s;
 	border-radius: 5px;
@@ -92,7 +93,7 @@
   margin: 15% auto;
   padding: 30px;
   width: 30%;
-  border: 1px solid #108014;
+  border: 1px solid #29b6f6;
   border-radius: 5px;
 }
 
@@ -107,15 +108,15 @@ h3{
 
 .add-btn button{
 	cursor: pointer;
-	padding: 4px 18px 4px 18px;
-	background-color: #108014;
+	padding: 0px 18px 0px 18px;
+	background-color: #29b6f6;
 	border: none;
 	transition-duration: 0.4s;
 	border-radius: 50%;
 
 	color: #ffffff;
 	float: right;
-	margin-top: -40px;
+	margin-top: -70px;
 	margin-bottom: 20px;
 	font-size: 50px
 
@@ -123,6 +124,10 @@ h3{
 
 .delete{
 	display: none;
+}
+
+#delete{
+	background-color: rgb(255, 55, 55);
 }
 
 @media (max-width: 575.98px) { 

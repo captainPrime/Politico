@@ -23,11 +23,8 @@ body {
 	height: 100%;
 	padding-bottom: 62px;
 	overflow: auto;
+	background-color: #ffffff;
 	margin: 0;
-	background: url("../images/bg3.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
 	font-size: 14px;
 
 }
@@ -81,7 +78,7 @@ body {
 .profile-title{
 	text-align: center;
 	margin-top: 20px;
-	color: white;
+	color: rgba(0, 0, 0, 0.885);
 }
 
 hr {
@@ -98,22 +95,22 @@ hr {
 	color: white;
 	margin: 0 auto;
 	display: inline-block;
-		transition-duration: 0.4s;
-		cursor: pointer;
-		padding: 10px 40px;
-		border: none;
-		border-radius: 5px;
-		background-color: #29b6f6;
-		overflow: hidden;
-		margin-right: 20px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	padding: 10px 40px;
+	border: none;
+	border-radius: 5px;
+	background-color: #29b6f6;
+	overflow: hidden;
+	margin-right: 20px;
 }
 
 
 	
 	.nav-button2:hover {
-		background-color: #ffffff;
+		background-color: #2086b5;
 		  color: #343a40;
-		  border: 1px solid #108014;
+		  border: 1px solid white;
 	
 }
 
@@ -122,14 +119,14 @@ hr {
 	transition-duration: 0.4s;
 	cursor: pointer;
     padding: 10px 40px;
-    border: none;
+    border: white 2px solid;
     border-radius: 5px;
-	background-color: #ff703b;
-	color: white;
+	background-color: white;
+	color: #29b6f6;
 }
 
 .vote-button{
-	border: 3px solid #108014;
+	border: 3px solid #29b6f6;
 	color: #279dd3;
 	font-size: 20px;
 	margin-top: 140px;
@@ -140,17 +137,17 @@ hr {
 
 
 .nav-button:hover, .vote-button:hover {
-	background-color: #ff703b;
+	background-color: #29b6f6;
   	color: white;
-  	border: 1px solid rgb(253, 253, 253);
+  	border: 2px solid rgb(253, 253, 253);
 }
 
 .vote-button:hover{
-	background-color: #108014;
+	background-color: #29b6f6;
 
 }
 #candidate-btn, #parties-btn{
-	background-color: #108014;
+	background-color: #29b6f6;
 	color: white;
 	display: inline-block;
 }
@@ -185,7 +182,8 @@ nav.politico-nav {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: rgba(32, 32, 39, 0.748);
+	background-color: #29b6f6;
+	box-shadow: 2px 5px 9px 2px rgba(44, 44, 44, 0.446);
 	
 }
 
@@ -194,14 +192,18 @@ nav.politico-nav div.nav-left {
 	padding-left: 20px
 }
 
-nav.politico-nav div.nav-right {
+nav.politico-nav div.nav-right, .nav-right2 {
 	float: right;
 	padding-right: 20px;
 	
 }
 
-.nav-right{
+.nav-right, .nav-right2{
 	margin-top: 10px;
+}
+
+.nav-right2{
+	margin-top: 33px;
 }
 
 nav.politico-nav a {
@@ -209,7 +211,7 @@ nav.politico-nav a {
 	display: block;
 	text-align: center;
 	padding: 21px 0px;
-	color: #ffffff;
+	color: white;
 	margin-top: -15px;
 }
 
@@ -222,7 +224,7 @@ nav.politico-nav a {
 	width: 100%;
 	padding: 15px 0;
 	/*background-color: #fafafa;*/
-	color: rgba(255, 255, 255, 0.54);
+	color: rgba(0, 0, 0, 0.734);
 	text-align: center;
 }
 
@@ -254,7 +256,7 @@ nav.politico-nav a {
 
 .profile-card, .vote-card {
 	border: 1px solid rgba(0,0,0,.125);
-	border: 3px solid #13ff1b;
+	border: 3px solid #29b6f6;
 	width: 100%; /*100%*/
 	height: 100px;
 	padding: 0 20px;
@@ -267,7 +269,7 @@ nav.politico-nav a {
     background-clip: border-box;
     transition-duration: 1s;
 	margin: 20px 0px;
-    background-color: #ffffff46;
+    background-color: #0a050588;
 }	
 .vote-card{
 	box-shadow: 0 4px 8px 2px rgba(0,0,0,.2), 0 8px 20px 2px rgba(0,0,0,.19);
@@ -280,14 +282,6 @@ nav.politico-nav a {
 
 }
 
-
-
-.vote-card:nth-child(1){
-/* 	background: url("../images/bg.jpg");
-	background-repeat: no-repeat;
-	background-size: cover; */
-}
-
 .vote-card-area{
 	width: 25%
 }
@@ -296,12 +290,12 @@ nav.politico-nav a {
 	margin: 0;
 	margin-top: 20px;
 	font-size: 40px;
-	color: rgb(241, 241, 241);
+	color: rgba(255, 255, 255, 0.878);
 	text-shadow: 2px 2px 2px 0px black;
 }
 .profile-card >span, .vote-card >span {
 	font-size: 15px;
-	color: rgba(250, 250, 250, 0.755);
+	color: rgba(255, 255, 255, 0.864);
 }
 
 
@@ -313,14 +307,14 @@ nav.politico-nav a {
 .feed-text {
 	margin: 5px 0;
 	font-size: 13px;
-	color: rgba(255, 255, 255, 0.946);
+	color: rgba(19, 18, 18, 0.638);
 }
    
 .feed-card {
 	border: 1px solid (0,0,0,.125);
-	border: 1.5px solid #108014;
+	border: 1.5px solid #29b6f6;
 	width: 100%;
-	height: 200px;
+	height: 150px;
 	padding: 0 20px;
 	border-radius: 5px;
 	position: relative;
@@ -365,7 +359,7 @@ nav.politico-nav a {
 .feed-button-area >a button {
 	cursor: pointer;
 	padding: 8px 25px;
-	background-color: #108014;
+	background-color: #29b6f6;
 	border: none;
 	transition-duration: 0.4s;
 	border-radius: 5px;
@@ -376,7 +370,7 @@ nav.politico-nav a {
 	text-align: right;
     font-weight: 500;
     /*margin-top: 47px;*/
-    color: rgba(0,0,0,.54);
+    color: rgba(14, 0, 0, 0.7);
 }
 
 .feed-body-content {
@@ -421,7 +415,7 @@ p{
     margin: 20px 0;
 }
 .allpoliticians-link >a {
-	color: #108014;
+	color: #29b6f6;
 }
 
 .vote{
@@ -430,6 +424,13 @@ p{
 
 .laravel{
 	padding-top: 10px
+}
+
+.images{
+	width: 70px;
+	height: 70px;
+	margin-top: -60px;
+	border-radius: 5px;
 }
 
 @media (max-width: 1095.98px) { 
@@ -466,7 +467,7 @@ p{
 
 @media (max-width: 575.98px) { 
 
-	nav.politico-nav div.nav-right, 
+	nav.politico-nav div.nav-right, nav.politico-nav div.nav-right2, 
 	nav.politico-nav div.nav-left {
 	 float: none;
 	 padding: 0;
@@ -476,6 +477,16 @@ p{
 		margin-top: 30px;
 		margin-left: -50px;
 	} 
+
+	
+	.nav-right2{
+		margin-top: 30px;
+	} 
+
+	.header2{
+		margin-top: 30px;
+		margin-left: -50px;
+	}
 	
 	.nav-button2{
 		margin: 0 auto;
@@ -545,6 +556,9 @@ p{
   ul li a{
 
     margin-right: 30px;
+}
+.images{
+	float: right;
 }
 
 }

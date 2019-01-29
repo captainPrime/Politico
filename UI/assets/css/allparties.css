@@ -1,3 +1,7 @@
+body{
+    background-color: #ffffff    
+}
+
 #img1{
     background: url('../images/party/apc.PNG');
     background-repeat: no-repeat;

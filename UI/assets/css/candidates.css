@@ -1,0 +1,48 @@
+.candidate-area {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-top: -30px;
+}
+.candidate-form-area {
+	margin-top: 10px;
+	position: relative;
+	padding: 10px 0px;
+	display: flex;
+	flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+}
+
+.candidate-form-text {
+	text-align: left;
+}
+
+h3{
+    color: rgba(0, 0, 0, 0.679);
+    text-align: left;
+}
+
+.candidate-details{
+    padding: 50px;
+    border: #29b6f6 2px solid;
+    height: 400px;
+	word-wrap: break-word;
+}
+
+img{
+	height: 80px;
+	width: 80px;
+}
+
+@media (max-width: 575.98px) { 
+    .candidate-details{
+        height: 500px;
+    }
+}
+
+
+

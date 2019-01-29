@@ -1,0 +1,196 @@
+body{
+    font-family: 'Sarabun', sans-serif;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#starter{
+    min-height: 450px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0, 143, 153, 0.638)), url("../images/hero-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+    justify-content: space-between;
+    box-shadow: 2px 5px 9px 2px rgba(44, 44, 44, 0.446);
+}
+
+
+.container button {
+    border: 2px solid white;
+    background-color: #29b6f6;
+    color: #FFFFFF;
+    padding: 12px 50px;
+    font-size: 1.3em;
+    margin: auto;
+    display: block;
+    text-decoration: none;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+
+
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-6rem);
+        transform: translateY(-6rem);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.container h1 {
+    margin: 0 0 10%;
+    font-size: 2.0em;
+    padding: 0 1em;
+    margin-bottom: 8.33333%;
+    -webkit-animation: pop-in .6s ease-out;
+    animation: pop-in .6s ease-out;
+    text-align: center;
+    margin-top: 100px;
+    color: white
+}
+
+.container p {
+    font-size: 1.5em;
+}
+
+.container button {
+    border: 2px solid white;
+    background-color: #29b6f6;
+    color: #FFFFFF;
+    padding: 12px 50px;
+    font-size: 1.3em;
+    align-content: center;
+}
+
+.container button:hover,
+.container button.focus,
+.container button.active {
+    transition: background-color 0.5s, border-color 0.5s;
+    background-color: #29b6f6;
+    border-color: #29b6f6;
+    color: #FFFFFF;
+}
+
+h2, span{
+    color: #29b6f6; 
+}
+
+h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h3{
+    font-family: 'Sarabun', sans-serif;
+	font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    color: black
+}
+
+#boxes{
+    margin-top: 10px;
+}
+
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+#boxes .box img{
+    height: 130px;
+    width: 130px;
+}
+
+hr{
+    visibility: hidden;
+    box-shadow: 2px 2px 2px 2px rgba(44, 44, 44, 0.124);
+
+}
+
+footer{
+    text-align: center;
+    font-family:'Nunito', sans-serif;
+    size: 10px;
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .container h1 {
+        font-size: 2.2em;
+    }
+
+    
+    #boxes .box {
+        width: 100%;
+        float: none;
+    }
+
+    hr{
+        width: 100%;
+        visibility: visible
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .container h1 {
+        font-size: 3em;
+    }
+
+    hr{
+        width: 100%;
+        visibility: visible
+    }
+
+    
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .container h1 {
+        font-size: 2.2em;
+    }
+    hr{
+        width: 100%;
+        visibility: visible
+    }
+}
+
+
+@media (max-width: 575.98px) { 
+
+    .container h1 {
+        font-size: 2.2em;
+    }
+
+    
+    #boxes .box, hr {
+        width: 100%;
+        float: none;
+    } 
+
+    hr{
+        width: 100%;
+        visibility: visible
+    }
+
+}
