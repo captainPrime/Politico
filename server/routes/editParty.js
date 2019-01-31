@@ -4,9 +4,6 @@ const parties = require("../mocks/parties");
 router.use(express.json());
 
 router.patch("/parties/:id/name/", (req, res) => {
-	// search the Party
-
-
 	const specificParty = parties.find(c => c.id === parseInt(req.params.id, 10));
 	if (!specificParty) {
 		res.status(404).send({status: 404, error: "request with the ID not found"});
