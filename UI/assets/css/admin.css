@@ -1,0 +1,160 @@
+.edit-card {
+	border: 1px solid rgba(0,0,0,.125);
+	border: 1px solid #29b6f6;
+	width: 100%;
+	height: 160px;
+	padding: 0 20px;
+	border-radius: 5px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    transition-duration: 1s; 
+    margin: 20px 0;
+    background-color: #ffffff;
+}
+
+.edit-card:first-child, .edit-card:last-child {
+	margin: 0;
+}
+
+.edit-card:hover {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+}
+
+.edit-card-title {
+	margin: 15px 0  6px;
+	color: #343a40;
+}
+
+.edit-card-questions {
+	font-size: 15px;
+	color: rgba(0,0,0,.54);
+}
+
+.edit-card-button-area {
+	 margin: 8px 0;
+}
+
+.edit-card-button-area > button, a #editButton {
+	cursor: pointer;
+	padding: 9px 16px;
+	background-color: #29b6f6;
+	border: none;
+	transition-duration: 0.4s;
+	border-radius: 5px;
+	color: #ffffff;
+}
+
+
+.edit-card-footer {
+	text-align: right;
+    font-weight: 500;
+    /*margin-top: 47px;*/
+    color: rgba(0,0,0,.54);
+}
+
+.edit-modal {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	display: none;
+	overflow: auto;
+  	background-color: rgba(0,0,0,0.4);
+	top: 0;
+	left: 0;
+}
+
+.edit-modal-content >button {
+	cursor: pointer;
+	padding: 14px 50px;
+	background-color: #29b6f6;
+	border: none;
+	transition-duration: 0.4s;
+	border-radius: 5px;
+	color: #ffffff;
+}
+
+.edit-modal-content >button:last-child {
+	background-color: #ef5350;
+	margin-left: 10px;
+}
+
+.edit-message{
+	color: white;
+}
+
+.edit-modal-content {
+  text-align: center;
+  background-color: rgb(45, 44, 44);
+  margin: 15% auto;
+  padding: 30px;
+  width: 30%;
+  border: 1px solid #29b6f6;
+  border-radius: 5px;
+}
+
+.show-modal {
+	display: block;
+}
+
+h3{
+	color: 
+	white;
+}
+
+.add-btn button{
+	cursor: pointer;
+	padding: 0px 18px 0px 18px;
+	background-color: white;
+	border: solid #29b6f6 2px;
+	transition-duration: 0.4s;
+	border-radius: 50%;
+	color: #29b6f6;
+	float: right;
+	margin-top: -70px;
+	margin-bottom: 20px;
+	font-size: 50px
+}
+
+.add-btn button:hover{
+	background-color: #29b6f6;
+	color: #ffffff
+}
+
+.delete{
+	display: none;
+}
+
+#delete{
+	background-color: rgb(255, 55, 55);
+}
+
+@media (max-width: 575.98px) { 
+	.edit-card {
+		height: auto;
+    	padding: 0px 5px;
+	}
+
+	.edit-card-title {
+	    font-size: 19px;
+	}
+
+	.edit-card-questions {
+		font-size: 11px;
+	}
+
+	.edit-card-button-area >button {
+		padding: 8px 16px;
+	}
+	.edit-modal-content >button {
+		padding: 10px 41px;
+	}
+	.edit-modal-content {
+		width: 80%;
+		padding: 40px 0;
+	}
+}
