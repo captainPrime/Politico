@@ -87,7 +87,7 @@ I will gladly accept your pull request if it:
 # Author(s)
 >- [Taiwo Oyindamola Ezekiel](https://github.com/captainPrime)
 
-#Acknowledgement
+# Acknowledgement
 - Andela-bootcamp-41
 - Samule Afoloranmi(LFA)
 
