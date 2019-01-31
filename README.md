@@ -33,6 +33,14 @@ The test file is written with mocha and this can be run by the command `npm run 
 To run test on individual file, cd into the file directory and run command `mocha <file-name>`
 
 # Deployment
+Heroku link
+This app is deployed using heroku
+https://politico-api.herokuapp.com/
+
+GITHUB page of UI
+This deploys the UI using github hosting page
+https://captainprime.github.io/Politico/UI/frontPage.html
+
 - To run endpoints type in command `npm start`
 - This shows a log `loading port 3000.....`
 - After, run specified api - links and send on postman to view results
@@ -86,14 +94,6 @@ I will gladly accept your pull request if it:
 #Licence
 This project is licenced by Andela-bootcamp
 politico. &copy; 2019
-
-# Heroku link
-This app is deployed using heroku
-https://politico-api.herokuapp.com/
-
-# GITHUB page of UI
-This deploys the UI using github hosting page
-https://captainprime.github.io/Politico/UI/frontPage.html
 
 # Core Technology Stacks
 >- Front-end (UI) : HTML, CSS, (Vanilla) Javascript
