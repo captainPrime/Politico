@@ -96,21 +96,6 @@ describe("/GET allOffices", () => {
 	});
 });
 
-describe("/Create office", () => {
-	it("api should return status 201 on post", (done) => {
-
-		chai.request(server)
-			.post("/api/v1/offices")
-			.send({status: 201, data: "object"})
-			.end((err, res) => {
-				res.should.have.status(422);
-				expect(res.body).to.be.a("object");
-				done();
-			});
-	});
-	
-});
-
 describe('/Delete Party', function() {
   
 	  it('should return status 202 after DELETING a bus', function(done) {
