@@ -13,8 +13,9 @@ NOTE: all endpoints are tested with POSTMAN.
 ## Prerequistes
 - node.js
 - express.js                   `$ npm install express --save`
-- eslint: Airbnb             `$ npm install eslint --save`
+- eslint: Airbnb               `$ npm install eslint --save`
 - mocha                        `$ npm install mocha --save`
+- Babel                        `$ npm install babel --save`
 
 ## Installation
 - Test Node. To see if Node is installed, open the Windows Command Prompt, Powershell or a similar command line tool, and type node -v . ...
@@ -22,9 +23,9 @@ NOTE: all endpoints are tested with POSTMAN.
 - Create a test file and run it.
 
 - Then install express `npm install express`,
-- Install all dependencies on pc by tying the command `npm install`
+- Install all dependencies on pc by running the command `npm install`
 
-- run app with command `npm start`. this runs the server file of the app and it functions begins
+- run app with command `npm start`. this runs the server file of the app and its functions starts
 
 # Running Tests
 The test file is written with mocha and this can be run by the command `npm run test`. This runs test on all the endpoints connected to the server.js file
@@ -32,13 +33,13 @@ The test file is written with mocha and this can be run by the command `npm run 
 To run test on individual file, cd into the file directory and run command `mocha <file-name>`
 
 # Deployment
-- When this is done, a list of endpoints will be visible. To run endpoints type in command `npm start`
+- To run endpoints type in command `npm start`
 - This shows a log `loading port 3000.....`
 - After, run specified api - links and send on postman to view results
 
 #Built With
-Node.js
-@babel/cli: "^7.2.3",
+`Node.js`
+`@babel/cli: "^7.2.3",
 @babel/core: "^7.2.2",
 @babel/node: "^7.2.2",
 @babel/preset-env: "^7.2.3",
@@ -56,11 +57,12 @@ istanbul: "^0.4.5",
 mocha: "^5.2.0",
 mocha-lcov-reporter: "^1.3.0",
 nodemon: "^1.18.9",
-nyc: "^13.1.0"
+nyc: "^13.1.0"`
 
 # Contributing
-please read <<CONTRIBUTION.md>> for details on our code of
- conduct, and process for submitting pull requests
+I will gladly accept your pull request if it:
+     - it has tests
+     - looks reasonable
 
  # Features
 - Users can sign up.
@@ -82,8 +84,8 @@ please read <<CONTRIBUTION.md>> for details on our code of
 - Samule Afoloranmi(LFA)
 
 #Licence
-This project is licenced by 
-Andela-bootcamp
+This project is licenced by Andela-bootcamp
+politico. &copy; 2019
 
 # Heroku link
 This app is deployed using heroku
