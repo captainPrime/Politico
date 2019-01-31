@@ -109,17 +109,20 @@ h3{
 .add-btn button{
 	cursor: pointer;
 	padding: 0px 18px 0px 18px;
-	background-color: #29b6f6;
-	border: none;
+	background-color: white;
+	border: solid #29b6f6 2px;
 	transition-duration: 0.4s;
 	border-radius: 50%;
-
-	color: #ffffff;
+	color: #29b6f6;
 	float: right;
 	margin-top: -70px;
 	margin-bottom: 20px;
 	font-size: 50px
+}
 
+.add-btn button:hover{
+	background-color: #29b6f6;
+	color: #ffffff
 }
 
 .delete{
