@@ -36,7 +36,6 @@ class PartiesController {
 	static deleteParty(req, res ){
 		const specificParty = parties.find(c => c.id === parseInt(req.params.id, 10));
 
-		// DELETE QUESTION
 		const index = parties.indexOf(specificParty);
 		parties.splice(index, 1);
   
