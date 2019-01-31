@@ -1,16 +1,11 @@
 const chai = require("chai");
-
 const chaiHttp = require("chai-http");
 const parties = require("../mocks/parties");
 process.env.NODE_ENV = "test";
-
 const server = require("../app");
-
 const { expect } = chai;
 const should = chai.should();
-
 chai.use(chaiHttp);
-
 
 describe("/GET allParties", () => {
 	it("it should get all the parties", (done) => {
@@ -23,6 +18,7 @@ describe("/GET allParties", () => {
 			});
 	});
 });
+
 describe("/Create party", () => {
 	it("api should return status 201 on post", (done) => {
 
@@ -62,28 +58,6 @@ describe("/GET/:id parties", () => {
 	});
 });
 
-describe("/GET/:id office", () => {
-	it("it should GET a office by the given id", (done) => {
-		const office = 		{
-			"id" : 1,
-			"type" : "federal", 
-			"name" : "president"
-		};
-
-		chai.request(server)
-			.get(`/api/v1/offices/${office.id}`)
-			.end((err, res) => {
-				res.should.have.status(200);
-				res.body.should.be.a("object");
-				res.body.data.should.be.a("array");
-				res.body.data[0].should.have.property("id").eql(office.id);
-				res.body.data[0].should.have.property("type");
-				res.body.data[0].should.have.property("name");
-				done();
-			});
-	});
-});
-
 describe("/GET allOffices", () => {
 	it("it should get all the offices", (done) => {
 		chai.request(server)
@@ -94,21 +68,6 @@ describe("/GET allOffices", () => {
 				done();
 			});
 	});
-});
-
-describe("/Create office", () => {
-	it("api should return status 201 on post", (done) => {
-
-		chai.request(server)
-			.post("/api/v1/offices")
-			.send({status: 201, data: "object"})
-			.end((err, res) => {
-				res.should.have.status(422);
-				expect(res.body).to.be.a("object");
-				done();
-			});
-	});
-	
 });
 
 describe('/Delete Party', function() {
