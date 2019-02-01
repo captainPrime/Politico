@@ -14,10 +14,34 @@ It is an online platform where citizens can cast their vote for a particular par
 NOTE: all endpoints are tested with POSTMAN.
 
 # Getting Started
+`step 1`
 - To run this app, create  a folder and clone the repo, after repo has been cloned, pull files into folder. this creates a replica of this gitHub repo. Ensure the the following are installed on the system: node.js, express.js, eslint, mocha ...
-- When this is done, a list of endpoints will be visible. To run endpoints type in command `npm start`
+
+`step 2`
+- cd into the repo
+
+`step 3`
+- To run endpoints type in command `npm start`
 - This shows a log `loading port 3000.....`
+
+`step 3`
 - After, run specified api - links and send on postman to view results
+
+`GET http://localhost:3000/api/v1/parties/`
+
+`POST http://localhost:3000/api/v1/parties/`
+
+`GET http://localhost:3000/api/v1/parties/<party-id>`         
+
+`PATCH http://localhost:3000/api/v1/parties/<party-id>/name`
+
+`DELETE http://localhost:3000/api/v1/parties/`
+
+`GET http://localhost:3000/api/v1/offices/`
+
+`GET http://localhost:3000/api/v1/offices/<office-id>`
+
+`POST http://localhost:3000/api/v1/offices/`
 
 ## Prerequistes
 - node.js
