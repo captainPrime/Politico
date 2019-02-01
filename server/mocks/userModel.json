@@ -1,0 +1,32 @@
+[
+    {
+        "id" : 1,
+        "firstname" : "Taiwo",
+        "lastname" : "Oyindamola",
+        "othername" : "Ezekeil",
+        "email" : "me@gmail.com",
+        "phoneNumber" : "08022222222",
+        "passportUrl" : "String",
+        "isAdmin" : true
+    },
+    {
+        "id" : 1,
+        "firstname" : "Seun",
+        "lastname" : "Tunde",
+        "othername" : "Isaac",
+        "email" : "me@gmail.com",
+        "phoneNumber" : "0802245222",
+        "passportUrl" : "String",
+        "isAdmin" : true
+    },
+    {
+        "id" : 1,
+        "firstname" : "Femi",
+        "lastname" : "Chukwu",
+        "othername" : "Jacob",
+        "email" : "me@gmail.com",
+        "phoneNumber" : "08011122222",
+        "passportUrl" : "String",
+        "isAdmin" : true
+    }   
+]
