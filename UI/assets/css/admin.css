@@ -16,6 +16,70 @@
     background-color: #ffffff;
 }
 
+.delete-area{
+
+	visibility: hidden;
+}
+
+.delete-area-show{
+	position: absolute;
+	padding: 100px;
+	background-color: rgba(14, 14, 14, 0.309);
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	visibility: visible;
+}
+
+.delete-option{
+	background-color: #ffffff;
+	padding: 20px;
+	width: 300px;
+	margin: auto;
+	display: block;
+	height: 160px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	
+}
+.delete-option a button{
+	text-indent: 32px;
+}
+
+.delete-option button{
+	display: flex;
+	flex-direction: row;
+	margin-right: 53px;
+	width: 100px;
+	margin-top: 30px;
+	text-align: center;
+	height: 50px;
+	border: 0px solid;
+	border-radius: 5px;
+}
+
+.btn1, btn2{
+	text-decoration: none;
+	text-align: center;
+	background-color: red;
+	color: white;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+}
+
+.btn2{
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	background-color: #29b6f6;
+}
+
+
+
 .edit-card:first-child, .edit-card:last-child {
 	margin: 0;
 }
@@ -156,5 +220,15 @@ h3{
 	.edit-modal-content {
 		width: 80%;
 		padding: 40px 0;
+	}
+	.delete-option button{
+		width: 60px;
+		height: 30px;
+		margin-right: 18px;
+	}
+
+	.delete-option{
+		float: none;
+		width: 100%
 	}
 }
