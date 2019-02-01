@@ -1,6 +1,7 @@
 # Politico 
 Politico is a web app which enables citizens give their mandate to politicians running for different government offices
 while building trust in the process through transparency.
+It is an online platform where citizens can cast their vote for a particular party and candidate and as well run as a candidate
 
 NOTE: all endpoints are tested with POSTMAN.
 
@@ -17,15 +18,29 @@ NOTE: all endpoints are tested with POSTMAN.
 - mocha                        `$ npm install mocha --save`
 - Babel                        `$ npm install babel --save`
 
+**Core Technology Stacks**
+>- Front-end (UI) : HTML, CSS, (Vanilla) Javascript
+>- Back-end: Nodejs/Express
+>- Database: PostgreSQL
+>- Testing: Mocha and Chai
+>- Transpiler: Babel
+
 ## Installation
-- Test Node. To see if Node is installed, open the Windows Command Prompt, Powershell or a similar command line tool, and type node -v . ...
-- Test NPM. ...
+- Test Node. To see if Node is installed, open the Windows Command Prompt, Powershell or a similar command line tool, and type node -v ....
+
+- Test NPM....
+
 - Create a test file and run it.
 
-- Then install express `npm install express`,
+- Then install express `npm install express`
+
 - Install all dependencies on pc by running the command `npm install`
 
-- run app with command `npm start`. this runs the server file of the app and its functions starts
+- Run app with command `npm start`. this runs the server file of the app and its functions starts
+
+- Endpoints are run via Postman
+
+- Run command `npm run test` to run test on each API ENDPOINTS
 
 # Running Tests
 The test file is written with mocha and this can be run by the command `npm run test`. This runs test on all the endpoints connected to the server.js file
@@ -46,6 +61,7 @@ https://captainprime.github.io/Politico/UI/frontPage.html
 - After, run specified api - links and send on postman to view results
 
 #Built With
+**Dependencies**
 `Node.js`
 `@babel/cli: "^7.2.3",
 @babel/core: "^7.2.2",
@@ -69,7 +85,7 @@ nyc: "^13.1.0"`
 
 # Contributing
 I will gladly accept your pull request if it:
-     - it has tests
+     - it has tests and
      - looks reasonable
 
  # Features
@@ -77,6 +93,7 @@ I will gladly accept your pull request if it:
 - Users can login.
 - Admin (electoral body) can create political parties.
 - Admin (electoral body) can delete a political party.
+- Admin (electoral body) can edit a political party.
 - Admin (electoral body) can create different political offices.
 - Users can vote for only one politician per political office.
 - Users can see the results of election.
@@ -94,13 +111,6 @@ I will gladly accept your pull request if it:
 #Licence
 This project is licenced by Andela-bootcamp
 politico. &copy; 2019
-
-# Core Technology Stacks
->- Front-end (UI) : HTML, CSS, (Vanilla) Javascript
->- Back-end: Nodejs/Express
->- Database: PostgreSQL
->- Testing: Mocha and Chai
->- Transpiler: Babel
 
 # Story Board
 Link to project management tool (Pivotal Tracker) 
