@@ -1,8 +1,26 @@
-import http from "http";
-import app from "./app";
+import express from "express";
+const app = express();
 
 const port = process.env.PORT || 3000;
 
-const server = http.createServer(app);
+import Route7 from "./routes/addNewOffice";
+import Route8 from "./routes/addNewParty";
+import Route6 from "./routes/deleteParty";
+import Route5 from "./routes/getAllParty";
+import Route4 from "./routes/editParty";
+import Route3 from "./routes/getAllOffices";
+import Route2 from "./routes/getSpecificOffice";
+import Route1 from "./routes/getSpecificParty";
 
-server.listen(port, () => { console.log(`loading port ${port}.....`); });
+app.use("/api/v1", Route8);
+app.use("/api/v1", Route7);
+app.use("/api/v1", Route6);
+app.use("/api/v1", Route5);
+app.use("/api/v1", Route4);
+app.use("/api/v1", Route3);
+app.use("/api/v1", Route2);
+app.use("/api/v1", Route1);
+
+app.listen(port, ()=>{
+    console.log("listening to port 3000...")
+})
