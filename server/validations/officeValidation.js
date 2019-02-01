@@ -50,7 +50,7 @@ class OfficeValidations {
 	}
 
 	aOfficeValidations(req, res, next){
-		if(!req.params || req.params.id > offices.length){
+		if(!req.body || req.params.id > offices.length){
 			return res.status(404).send({status: 404, error: "request not found"});
 		}
     
