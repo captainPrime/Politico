@@ -19,5 +19,3 @@ describe("/GET allParties", () => {
 			});
 	});
 });
-
-
