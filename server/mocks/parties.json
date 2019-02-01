@@ -1,0 +1,38 @@
+[
+	{
+		"id" : 1, 
+		"name" : "Action Unity Congress",
+		"hqAddress": "Ikeja, Lagos.",
+		"logoUrl": "string"
+	},
+	{
+		"id" : 2, 
+		"name" : "Power Unity Congress",
+		"hqAddress": "Ikeja, Lagos.",
+		"logoUrl": "string"
+	},
+	{
+		"id" : 3, 
+		"name" : "Action Part Congress",
+		"hqAddress": "Ikeja, Lagos.",
+		"logoUrl": "string"
+	},
+	{
+		"id" : 4, 
+		"name" : "Unity  Congress",
+		"hqAddress": "Ikeja, Lagos.",
+		"logoUrl": "string"
+	},
+	{
+		"id" : 5, 
+		"name" : "People Unity Party",
+		"hqAddress": "Ikeja, Lagos.",
+		"logoUrl": "string"
+	},
+	{
+		"id" : 6, 
+		"name" : "Action Unity Congress",
+		"hqAddress": "Ikeja, Lagos.",
+		"logoUrl": "string"
+	}
+]
