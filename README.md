@@ -15,17 +15,24 @@ NOTE: all endpoints are tested with POSTMAN.
 
 # Getting Started
 `step 1`
-- To run this app, create  a folder and clone the repo, after repo has been cloned, pull files into folder. this creates a replica of this gitHub repo. Ensure the the following are installed on the system: node.js, express.js, eslint, mocha ...
+- To run this app, create  a folder and clone the repo
+`git clone https://github.com/captainPrime/Politico.git`
+
+- after repo has been cloned, pull files into folder. 
+`git pull origin <Branch-name>` this creates a replica of this gitHub repo. Ensure the the following are installed on the system: node.js, express.js, eslint, mocha ...
 
 `step 2`
 - cd into the repo
 
 `step 3`
+- Run `npm install` to install dependencies listed in the package.json file
+
+`step 4`
 - To run endpoints type in command `npm start`
 - This shows a log `loading port 3000.....`
 
-`step 3`
-- After, run specified api - links and send on postman to view results
+`step 5`
+- After, run specified api - links and send on **POSTMAN** to view results
 
 `GET http://localhost:3000/api/v1/parties/`
 
@@ -44,6 +51,7 @@ NOTE: all endpoints are tested with POSTMAN.
 `POST http://localhost:3000/api/v1/offices/`
 
 ## Prerequistes
+**NOTE:** make sure you have npm installed
 - node.js
 - express.js                   `$ npm install express --save`
 - eslint: Airbnb               `$ npm install eslint --save`
