@@ -17,5 +17,4 @@ router.post("/parties", (req, res) => {
 });
 
 module.exports = router;
-
     
