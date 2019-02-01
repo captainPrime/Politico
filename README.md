@@ -77,3 +77,6 @@ https://captainprime.github.io/Politico/UI/frontPage.html
 
 # Author(s)
 >- [Taiwo Oyindamola Ezekiel](https://github.com/captainPrime)
+# Politico
+
+#Hosting UI on github pages 
