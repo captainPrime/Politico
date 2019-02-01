@@ -1,3 +1,11 @@
+[![Build Status](https://travis-ci.org/captainPrime/Politico.svg?branch=ft-api-endpoints-createOffice-%23163388520)](https://travis-ci.org/captainPrime/Politico)
+
+[![Coverage Status](https://coveralls.io/repos/github/captainPrime/Politico/badge.svg?branch=ft-api-endpoints-createOffice-%23163388520)](https://coveralls.io/github/captainPrime/Politico?branch=ft-api-endpoints-createOffice-%23163388520)
+
+[![Code Climate](https://codeclimate.com/github/cloudfoundry/membrane.png)](https://codeclimate.com/github/cloudfoundry/membrane)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/b1161b997b36d04b615c/test_coverage)](https://codeclimate.com/github/captainPrime/Politico/test_coverage)
+
 # Politico 
 Politico is a web app which enables citizens give their mandate to politicians running for different government offices
 while building trust in the process through transparency.
@@ -17,13 +25,6 @@ NOTE: all endpoints are tested with POSTMAN.
 - eslint: Airbnb               `$ npm install eslint --save`
 - mocha                        `$ npm install mocha --save`
 - Babel                        `$ npm install babel --save`
-
-**Core Technology Stacks**
->- Front-end (UI) : HTML, CSS, (Vanilla) Javascript
->- Back-end: Nodejs/Express
->- Database: PostgreSQL
->- Testing: Mocha and Chai
->- Transpiler: Babel
 
 ## Installation
 - Test Node. To see if Node is installed, open the Windows Command Prompt, Powershell or a similar command line tool, and type node -v ....
@@ -60,28 +61,15 @@ https://captainprime.github.io/Politico/UI/frontPage.html
 - This shows a log `loading port 3000.....`
 - After, run specified api - links and send on postman to view results
 
-#Built With
-**Dependencies**
-`Node.js`
-`@babel/cli: "^7.2.3",
-@babel/core: "^7.2.2",
-@babel/node: "^7.2.2",
-@babel/preset-env: "^7.2.3",
-babel-cli: "^6.26.0",
-babel-preset-es2015: "^6.24.1",
-babel-preset-stage-2: "^6.24.1",
-babel-register: "^6.26.0",
-chai: "^    4.2.0",
-chai-http: "^4.2.1",
-coveralls: "^3.0.2",
-eslint: "^5.11.1",
-eslint-config-airbnb-base: "^13.1.0",
-eslint-plugin-import: "^2.14.0",
-istanbul: "^0.4.5",
-mocha: "^5.2.0",
-mocha-lcov-reporter: "^1.3.0",
-nodemon: "^1.18.9",
-nyc: "^13.1.0"`
+# Built With
+
+**Core Technology Stacks**
+>- Front-end (UI) : HTML, CSS, (Vanilla) Javascript
+>- Back-end: Nodejs/Express
+>- Database: PostgreSQL
+>- Testing: Mocha and Chai
+>- Transpiler: Babel
+
 
 # Contributing
 I will gladly accept your pull request if it:
@@ -98,7 +86,7 @@ I will gladly accept your pull request if it:
 - Users can vote for only one politician per political office.
 - Users can see the results of election.
 
-#Versioning
+# Versioning
 
 
 # Author(s)
@@ -108,7 +96,7 @@ I will gladly accept your pull request if it:
 - Andela-bootcamp-41
 - Samule Afoloranmi(LFA)
 
-#Licence
+# Licence
 This project is licenced by Andela-bootcamp
 politico. &copy; 2019
 
@@ -119,5 +107,3 @@ Link to project management tool (Pivotal Tracker)
 # Template
 User Interface for Politico app is hosted on  
 > (https://captainprime.github.io/Politico/UI/)
-
-
