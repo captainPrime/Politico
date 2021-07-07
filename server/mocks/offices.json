@@ -1,0 +1,21 @@
+[
+	{
+		"id" : 1,
+		"type" : "federal", 
+		"name" : "president"
+	},
+
+		
+	{
+		"id" : 2,
+		"type" : "federal", 
+		"name" : "Governor"
+	},
+
+		
+	{
+		"id" : 3,
+		"type" : "state", 
+		"name" : "local Government chairman"
+	}
+]
